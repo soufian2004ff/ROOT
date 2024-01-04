@@ -1,25 +1,21 @@
 package main
 
-import (
-	"fmt"
-
-)
+import "fmt"
 
 
-func isNegative(nb int) {
-	if nb < 0 {
-		fmt.Println("T")
-	} else {
-		fmt.Println("F")
-	} 
+func PrintComb() {
+	for i := 0; i <= 7; i++ {
+		for j := i +1; j <=  8; j++ {
+			for k := j+1; k <= 9; k++ {
+				fmt.Printf("%d%d%d, ", i, j,k)
+			
 
+				}
+			}
+		}
 	}
 
-
 func main() {
-
-	isNegative(1)
-	isNegative(0)
-	isNegative(-1)
-
+PrintComb()
 }
+
